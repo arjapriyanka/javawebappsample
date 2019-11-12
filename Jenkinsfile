@@ -18,7 +18,7 @@ node {
   
   stage('deploy') {
     def resourceGroup = 'myResourceGroup' 
-    def webAppName = 'JenkinsTestApp'
+    def webAppName = 'jenkinstestapp'
     // login Azure
     withCredentials([azureServicePrincipal('ef7f8043-f64f-4ea1-94e8-683284acf68e')]) {
       sh '''
